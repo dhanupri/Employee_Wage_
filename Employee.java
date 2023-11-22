@@ -47,7 +47,7 @@ public class EmployeeWageComputation {
         int totworkingHour=0;
         int totworkingDays=0;
 
-        while(totworkingHour<max_working_hour || totworkingDays<max_woking_days){
+        while(totworkingHour<max_working_hour && totworkingDays<max_woking_days){
             int present_or_absent=presentOrAnsent();
             int daily_wage=calculateDailyWage(present_or_absent);
             monthlyWage+=daily_wage;
