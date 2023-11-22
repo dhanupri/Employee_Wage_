@@ -34,8 +34,13 @@ public static void main(String[] args){
        
 
         System.out.println("WELCOME TO EMPLOYEE WAGE COMPUTATION");
+	 int monthlyWage=0;
+	for(int i=0;i<20;i++){
 	int present_or_absent=presentOrAnsent();
+
  	int daily_wage=calculateDailyWage(present_or_absent);
+	monthlyWage+=daily_wage;
+	}
 	
 }
 }
